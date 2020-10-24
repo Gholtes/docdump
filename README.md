@@ -35,5 +35,5 @@ Use pip to install the package and its dependancies.
 pip install docdump
 ```
 
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
+[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
 [license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=flat-square
