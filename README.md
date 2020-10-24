@@ -26,7 +26,7 @@ absolute_path = document.path
  
 ## Installation:
 
-Use pip to install SortStream and its dependancies.
+Use pip to install the package and its dependancies.
 
 ```bash
 pip install docdump
