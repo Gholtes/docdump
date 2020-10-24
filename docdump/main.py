@@ -2,6 +2,7 @@ from readers.word import word_reader
 from readers.powerpoint import powerpoint_reader
 from readers.excel import excel_reader
 from readers.pdf import pdf_reader
+from readers.text import txt_reader
 from readers.metadata import *
 
 import os
@@ -25,10 +26,14 @@ class doc_reader:
 	def _get_filetype(self):
 		ext_to_type = {
 			"docx":"word",
+			"doc":"word",
 			"pptx":"powerpoint",
+			"ppt":"powerpoint",
 			"xlsx":"excel",
 			"xlsm":"excel",
-			"pdf":"pdf"
+			"xls":"excel",
+			"pdf":"pdf",
+			"txt":"txt"
 		}
 		try:
 			type_ = ext_to_type[self.path.split(".")[-1]]
@@ -36,15 +41,19 @@ class doc_reader:
 			raise ValueError("file type not recognised. Please only use file extentions: {0}".format(ext_to_type.keys()))
 		return type_
 
-	def _read(self, doc_path, type):
-		if type == "word":
+	def _read(self, doc_path, type_):
+		if type_ == "word":
 			reader = word_reader()
-		elif type == "powerpoint":
+		elif type_ == "powerpoint":
 			reader = powerpoint_reader()
-		elif type == "excel":
+		elif type_ == "excel":
 			reader = excel_reader()
-		elif type == "pdf":
+		elif type_ == "pdf":
 			reader = pdf_reader()
+		elif type_ == "txt":
+			reader = txt_reader()
+		else:
+			return None
 
 		return reader.read(doc_path)
 	
@@ -55,6 +64,8 @@ class doc_reader:
 			metadata_reader = excel_metadata()
 		elif type_ == "pdf":
 			metadata_reader = pdf_metadata()
+		else:
+			return None
 		
 		return metadata_reader.read(doc_path)
 
