@@ -13,8 +13,17 @@ DocDump extracts all text as a single string, and does not preserve text structu
 it a useful tool in a natural language processing or search pipeline.
 
 DocDump does not perform any preprocessing or normalisation of the extracted text.
+## Getting Started
 
-## Usage
+DocDump requires Python 3.7+
+
+### Installation
+
+```bash
+pip install docdump
+```
+
+### Usage
 
 ```python
 from docdump import doc_reader
@@ -27,13 +36,25 @@ filetype = document.filetype
 absolute_path = document.path
 ```
  
-## Installation:
+## Contributing
 
-Use pip to install the package and its dependancies.
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-```bash
-pip install docdump
-```
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+## Contact
+
+Grant Holtes - gwholtes@gmail.com
+
+Project Link: [https://github.com/Gholtes/docdump](https://github.com/Gholtes/docdump)
 
 [license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
 [license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=flat-square
