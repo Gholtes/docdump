@@ -1,14 +1,13 @@
 from setuptools import setup
 
-name = docdump
+name = "docdump"
 
 setup(
 	name=name,
-	version='1.0',
+	version='1.0.1',
 	author = "Grant Holtes",
 	author_email = "gwholes@gmail.com",
-	url = "https://github.com/Gholtes/SortStream",
-	download_url="https://github.com/Gholtes/SortStream/archive/v1.2.tar.gz",
+	url = "https://github.com/Gholtes/docdump",
 	keywords = ["nlp", "text processing", "document", "pdf", "Microsoft office", "text"],
 	packages=[name],
 	install_requires=[
