@@ -1,9 +1,9 @@
-from docdump.readers.word import word_reader
-from docdump.readers.powerpoint import powerpoint_reader
-from docdump.readers.excel import excel_reader
-from docdump.readers.pdf import pdf_reader
-from docdump.readers.text import txt_reader
-from docdump.readers.metadata import *
+from docdump.word import word_reader
+from docdump.powerpoint import powerpoint_reader
+from docdump.excel import excel_reader
+from docdump.pdf import pdf_reader
+from docdump.text import txt_reader
+from docdump.metadata import *
 
 import os
 
