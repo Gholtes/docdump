@@ -1,15 +1,18 @@
+
+[![MIT License][license-shield]][license-url]
 # DocDump
 
 #### Grant Holtes 2020
 ### A package to extract text from common document types
 
 DocDump aims to allow for raw text data and document metadata to be easily extracted from a 
-range of commonly used document types, such as Word, PDF, PowerPoint, Excel, txt. 
+range of commonly used document types, such as Word, PDF, PowerPoint, Excel, txt. DocDump acts as 
+a wrapper for a number of existing packages: `PyPDF2`, `openpyxl`, `python-docx`, `python-pptx`.
 
 DocDump extracts all text as a single string, and does not preserve text structure. This makes
 it a useful tool in a natural language processing or search pipeline.
 
-DocDump does not perform any preprocessing or normalisation.
+DocDump does not perform any preprocessing or normalisation of the extracted text.
 
 ## Usage
 
@@ -31,3 +34,6 @@ Use pip to install the package and its dependancies.
 ```bash
 pip install docdump
 ```
+
+[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
+[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=flat-square
