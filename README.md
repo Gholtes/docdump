@@ -46,5 +46,5 @@ Grant Holtes - gwholtes@gmail.com
 
 Project Link: [https://github.com/Gholtes/docdump](https://github.com/Gholtes/docdump)
 
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
+[license-url]: https://github.com/Gholtes/docdump/blob/master/LICENSE.txt
 [license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=flat-square
