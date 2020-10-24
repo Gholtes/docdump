@@ -1,8 +1,6 @@
 
 [![MIT License][license-shield]][license-url]
 # DocDump
-
-#### Grant Holtes 2020
 ### A package to extract text from common document types
 
 DocDump aims to allow for raw text data and document metadata to be easily extracted from a 
