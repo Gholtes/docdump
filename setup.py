@@ -4,7 +4,7 @@ name = "docdump"
 
 setup(
 	name=name,
-	version='1.0.2',
+	version='1.0.3',
 	author = "Grant Holtes",
 	author_email = "gwholes@gmail.com",
 	url = "https://github.com/Gholtes/docdump",

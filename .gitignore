@@ -3,3 +3,5 @@ env/
 __pycache__/
 dist/
 docdump.egg-info/
+tests/
+test.py
