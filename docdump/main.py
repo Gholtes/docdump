@@ -58,8 +58,8 @@ class doc_reader:
 		return reader.read(doc_path)
 	
 	def _read_metadata(self, doc_path, type_):
-		if type_ in ["word", "excel", "powerpoint"]:
-			metadata_reader = office_metadata()
+		if type_ in ["word", "powerpoint"]:
+			metadata_reader = word_ppt_metadata()
 		elif type_ == "excel":
 			metadata_reader = excel_metadata()
 		elif type_ == "pdf":

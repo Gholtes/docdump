@@ -1,4 +1,4 @@
-from docx  import Document
+from docx import Document
 
 class word_reader:
 	def __init__(self):
